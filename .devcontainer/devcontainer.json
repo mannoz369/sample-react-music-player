@@ -1,0 +1,25 @@
+{
+  "name": "Music_Player",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:latest",
+  "forwardPorts": [5173],
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "eslint.autoFixOnSave": true,
+        "eslint.validate": [
+          "javascript",
+          "typescript",
+          "javascriptreact",
+          "typescriptreact"
+        ],
+        "editor.formatOnSave": true
+      },
+      "extensions": [
+        "esbenp.prettier-vscode",
+        "dbaeumer.vscode-eslint",
+        "ms-vscode.vscode-typescript-tslint-plugin"
+      ]
+    }
+  },
+  "postCreateCommand": "npm install"
+}

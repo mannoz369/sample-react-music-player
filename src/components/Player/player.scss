@@ -1,0 +1,70 @@
+.player_container {
+  width:100%;
+  padding: 1rem;
+  // border: 1px solid rgb(141, 141, 141);
+  border-radius: 10px;
+  height: calc(100% - 80px); // Subtract the height of the navbar
+  color: rgb(218, 218, 218);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black !important;
+  position:absolute;
+  top: 80px; // Position below the navbar
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: black;
+
+  > * {
+    padding: 1rem 0;
+    color: rgb(202, 202, 202);
+  }
+
+  .title {
+    font-size: inherit;
+  }
+  .navigation {
+    width: 50%;
+
+    .navigation_wrapper {
+      min-width: 100%;
+      background-color: rgba(119, 119, 119, 0.781);
+      height: 5px;
+      border-radius: 30px;
+      cursor: pointer;
+
+      .seek_bar {
+        width: 0;
+        height: 100%;
+        background-color: rgb(24, 128, 3);
+        border-radius: 30px;
+      }
+    }
+  }
+  .controls {
+    font-size: inherit;
+    display: flex;
+    align-items: center;
+
+    .btn_action {
+      font-size: 2rem;
+      margin: 0 1rem;
+      cursor: pointer;
+
+      &:hover {
+        color: white;
+      }
+    }
+
+    .pp {
+      font-size: 4rem;
+    }
+  }
+}
+
+.center-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
